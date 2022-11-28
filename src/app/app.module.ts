@@ -7,6 +7,8 @@ import { AddtodoListComponent } from './addtodo-list/addtodo-list.component';
 import { ViewtodoListComponent } from './viewtodo-list/viewtodo-list.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NavigationComponent } from './navigation/navigation.component';
+import { FormStyle } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 const myRoute:Routes=[
   {
@@ -29,7 +31,8 @@ const myRoute:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule
    
   ],
   providers: [],
